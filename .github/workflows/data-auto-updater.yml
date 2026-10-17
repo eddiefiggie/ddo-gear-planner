@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+      - fork-data-build   # FORK-ONLY: a push here runs the build (dispatch needs the default branch)
   schedule:
     # Run at 5:18 UTC daily
     - cron: '18 5 * * *'
